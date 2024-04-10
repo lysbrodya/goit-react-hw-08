@@ -7,6 +7,7 @@ export default function SearchBox() {
   const dispatch = useDispatch();
 
   const onChangeValue = (e) => dispatch(changeFilter(e.target.value));
+
   return (
     <>
       <p>Find contacts by name</p>
