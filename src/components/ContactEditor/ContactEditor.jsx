@@ -5,6 +5,7 @@ import { useId } from "react";
 import * as Yup from "yup";
 import { ErrorMessage } from "formik";
 import css from "./ContactEditor.module.css";
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
   const dispatch = useDispatch();
@@ -28,7 +29,9 @@ export default function ContactForm() {
     <Formik
       initialValues={initialValues}
       onSubmit={(values, actions) => {
-        dispatch(addContact(values));
+        dispatch(addContact(values))
+          .unwrap()
+          .then(() => toast.success("Contact has been created"));
         actions.resetForm();
       }}
       validationSchema={FeedbackSchema}
