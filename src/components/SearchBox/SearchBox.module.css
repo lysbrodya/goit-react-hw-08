@@ -1,0 +1,13 @@
+.searchBox {
+  width: 32%;
+  height: 20px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.searchBox:hover {
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+.searchBox:focus {
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}

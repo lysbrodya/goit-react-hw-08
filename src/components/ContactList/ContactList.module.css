@@ -1,0 +1,31 @@
+/* .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+} */
+.list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.contact {
+  display: flex;
+  width: 31%;
+  border-radius: 3px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  color: rgb(6, 1, 1);
+  transition: 0.2s linear;
+  background: transparent;
+
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+.contact:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3c82f8;
+}

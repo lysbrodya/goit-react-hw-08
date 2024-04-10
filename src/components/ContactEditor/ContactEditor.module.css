@@ -1,0 +1,79 @@
+.form {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font: inherit;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  resize: none;
+}
+
+.button {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #303f9f;
+}
+
+.button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 31%;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: rgb(6, 1, 1);
+  transition: 0.2s linear;
+  background: transparent;
+
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+.form:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3c82f8;
+}
+
+.button {
+  margin-left: auto;
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+  transition: 0.5s;
+}
+.button:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}
+.erm {
+  display: flex;
+  color: red;
+  font-size: small;
+}
+input {
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
